@@ -1,0 +1,327 @@
+.p0 {
+    padding: 0px;
+}
+
+#header {
+    .logo {
+        height: 70px;
+        width: 5%;
+        background-color: #1e2126;
+
+        position: relative;
+
+        img {
+            position: absolute;
+            top: 25%;
+            left: 25%;
+        }
+    }
+
+    .nav {
+        width: 80%;
+        height: 70px;
+        background-color: #34373c;
+
+        ul {
+            width: 100%;
+            display: flex;
+            list-style: none;
+            justify-content: space-around;
+
+            li {
+                padding-top: 20px;
+
+                a {
+                    color: #707378;
+                    text-decoration: none;
+
+
+                    &:hover {
+                        color: #b5b8bd;
+                    }
+                }
+
+                .search-box {
+                    width: 260px;
+                    height: 35px;
+                    background-color: #4b4f58;
+                    border-color: transparent;
+                    border-radius: 5px;
+                    padding-left: 40px;
+                    color: white;
+                }
+
+                &:last-child {
+                    margin-left: 30%;
+                    padding-top: 15px;
+                    position: relative;
+                    box-sizing: border-box;
+
+                    i {
+                        color: white;
+                        position: absolute;
+                        top: 25px;
+                        left: 10px;
+
+                    }
+                }
+            }
+
+        }
+    }
+
+    .user-dropdown {
+        width: 15%;
+        height: 70px;
+        background-color: #1e2126;
+
+        .profil-img {
+            width: 40px;
+            height: 40px;
+            float: left;
+            margin: 15px;
+
+            box-sizing: border-box;
+
+            img {
+                height: 100%;
+                width: 100%;
+                border-radius: 100%;
+                object-fit: cover;
+            }
+        }
+
+        p {
+            color: #707378;
+            margin: 20px 20px;
+            font-size: 14px;
+
+        }
+    }
+}
+
+#main {
+    .pages {
+        width: 5%;
+        min-height: 100vh;
+        background-color: #92c46b;
+        float: left;
+
+        ul {
+            list-style: none;
+            text-align: center;
+            padding: 0px;
+
+            li {
+                margin-top: 15px;
+                height: 50px;
+                font-size: 30px;
+
+                button {
+                    background-color: transparent;
+                    border: transparent;
+                    cursor: pointer;
+                    outline: none;
+                }
+
+                i {
+                    color: #598b36;
+
+                }
+            }
+        }
+    }
+
+    .dashboard-page {
+        width: 95%;
+
+        .pages-header {
+            height: 65px;
+            padding-top: 18px;
+
+            p {
+                margin: 0px 0px 0px 65px;
+                color: #707378;
+                font-weight: 500;
+                font-size: 18px;
+
+                i {
+                    font-size: 12px;
+                    margin-left: 5px;
+                    color: #bfbec6;
+                }
+            }
+        }
+
+        .statistic {
+            height: auto;
+            background-color: #f6f6f6;
+            border-top: 1px solid #e5e5e5;
+            padding-top: 15px;
+
+            ul {
+                list-style: none;
+                display: flex;
+                justify-content: inherit;
+                padding: 0px 0px 30px;
+                margin: 0px;
+
+                li {
+                    margin-left: 65px;
+                    width: 12%;
+                    border-left-color: green;
+                    padding-left: 5px;
+                    height: 70px;
+
+                    h1 {
+                        color: #5b5f62;
+                        margin: 0px;
+                    }
+
+                    p {
+                        color: #b9babe;
+
+                    }
+                }
+
+                li:nth-child(1) {
+                    border-left: 3px solid #91bb6f;
+                }
+
+                li:nth-child(2) {
+                    border-left: 3px solid #327673;
+                }
+
+                li:nth-child(3) {
+                    border-left: 3px solid #91bb6f;
+                }
+
+                li:nth-child(4) {
+                    border-left: 3px solid #de542c;
+                }
+
+                li:nth-child(5) {
+                    border-left: 3px solid #91bb6f;
+                }
+
+                li:nth-child(6) {
+                    border-left: 3px solid #de542c;
+                }
+            }
+        }
+
+        .charity-statistics {
+            .left-chart {
+                width: 48%;
+                float: left;
+                padding-left: 30px;
+            }
+
+            .right-chart {
+                width: 48%;
+                float: right;
+                padding-right: 30px;
+            }
+        }
+
+        .players-information {
+            background-color: #f2f2f2;
+            height: 650px;
+
+
+
+            .players-list {
+                float: left;
+                width: 50%;
+
+                h5 {
+                    color: #7a797e;
+                    margin-left: 45px;
+                    margin-top: 40px;
+                }
+
+                ul {
+                    list-style: none;
+                    margin: 0px;
+
+
+                    li {
+                        display: inline-block;
+                        width: 196px;
+                        margin-top: 30px;
+
+                        p {
+                            margin: 0px 0px 0px 55px;
+                            color: #9c9c9c;
+                        }
+
+                        span {
+                            font-size: 12px;
+                            margin-left: 10px;
+                            color: #c6c6c6;
+                        }
+
+                        img {
+                            border-radius: 100%;
+                            height: 45px;
+                            width: 45px;
+                            object-fit: cover;
+                            float: left;
+                        }
+                    }
+                }
+            }
+        }
+
+        .players-statistics {
+            width: 50%;
+            float: right;
+            height: auto;
+
+            h5 {
+                color: #7a797e;
+                margin-top: 40px;
+            }
+
+            .circle-box {
+                text-align: center;
+                height: 110px;
+                margin-top: 30px;
+
+                canvas {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                }
+
+                .chart {
+                    width: 140px;
+                    height: 140px;
+                    line-height: 140px;
+                    position: relative;
+                    text-align: center;
+                    top: 0;
+                    font-size: 25px;
+
+                    .circle-percent {
+                        position: absolute;
+                        left: 35px;
+                        bottom: 15px;
+                    }
+                }
+
+                .skill-name {
+                    font-weight: 600;
+                    color: #767779;
+                }
+
+                span {
+                    margin-right: 15px;
+                }
+            }
+        }
+    }
+
+
+
+}

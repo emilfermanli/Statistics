@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz"
+        crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.min.js"></script>
+</head>
+
+<body>
+    <section id="header">
+        <div class="container-fluid">
+            <div class="header-nav">
+                <div class="row">
+                    <div class="logo">
+                        <img src="assets/images/ribbon (1).png" alt="">
+                    </div>
+                    <div class="nav">
+                        <ul>
+                            <li><a href="">+ Add User</a></li>
+                            <li><a href="">User Preferences</a></li>
+                            <li><a href="">Settings</a></li>
+                            <li> <i class="fas fa-search"></i>
+                                <form action=""><input class="search-box" type="text"></form>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="user-dropdown">
+                        <div class="profil-img">
+                            <img src="assets/images/human.jpg" alt="">
+                        </div>
+                        <p>Ramil Huseynov <i class="fas fa-caret-down"></i></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="main">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="pages">
+                    <ul>
+                        <li><button><i class="fab fa-cloudscale"></i></button></li>
+                        <li><button><i class="far fa-address-book"></i></button></li>
+                        <li><button><i class="fas fa-pencil-alt"></i></button></li>
+                        <li><button><i class="far fa-calendar-alt"></i></button></li>
+                        <li><button><i class="far fa-file-alt"></i></button></li>
+                        <li><button><i class="far fa-comments"></i></button></li>
+                        <li><button><i class="fas fa-signal"></i></button></li>
+                    </ul>
+                </div>
+                <div class="dashboard-page">
+                    <div class="pages-header">
+                        <p>Dashboard <i class="fas fa-cog"></i></p>
+                    </div>
+                    <div class="statistic">
+                        <ul>
+                            <li>
+                                <h1>267</h1>
+                                <p>Online Players</p>
+                            </li>
+                            <li>
+                                <h1>2483</h1>
+                                <p>Hours played</p>
+                            </li>
+                            <li>
+                                <h1>1890</h1>
+                                <p>New tournaments</p>
+                            </li>
+                            <li>
+                                <h1>22</h1>
+                                <p>Lifetime Fails</p>
+                            </li>
+                            <li>
+                                <h1>16</h1>
+                                <p>Comments</p>
+                            </li>
+                            <li>
+                                <h1>6544</h1>
+                                <p>Games played</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="charity-statistics">
+                        <div class="left-chart">
+                            <canvas id="myChart" width="600" height="250"></canvas>
+                        </div>
+                        <div class="right-chart">
+                            <canvas id="mySecondChart" width="600" height="250"></canvas>
+                        </div>
+                    </div>
+                    <div class="players-information">
+                        <div class="players-list">
+                            <h5>Recent Player</h5>
+                            <ul>
+                                <li><img src="assets/images/human.jpg" alt="">
+                                    <p>Daryl Ginn</p>
+                                    <span>United Kingdom</span>
+                                </li>
+                                <li><img src="assets/images/human.jpg" alt="">
+                                    <p>Daryl Ginn</p>
+                                    <span>United Kingdom</span>
+                                </li>
+                                <li><img src="assets/images/human.jpg" alt="">
+                                    <p>Daryl Ginn</p>
+                                    <span>United Kingdom</span>
+                                </li>
+                                <li><img src="assets/images/human.jpg" alt="">
+                                    <p>Daryl Ginn</p>
+                                    <span>United Kingdom</span>
+                                </li>
+                                <li><img src="assets/images/human.jpg" alt="">
+                                    <p>Daryl Ginn</p>
+                                    <span>United Kingdom</span>
+                                </li>
+                                <li><img src="assets/images/human.jpg" alt="">
+                                    <p>Daryl Ginn</p>
+                                    <span>United Kingdom</span>
+                                </li>
+                                <li><img src="assets/images/human.jpg" alt="">
+                                    <p>Daryl Ginn</p>
+                                    <span>United Kingdom</span>
+                                </li>
+                                <li><img src="assets/images/human.jpg" alt="">
+                                    <p>Daryl Ginn</p>
+                                    <span>United Kingdom</span>
+                                </li>
+                                <li><img src="assets/images/human.jpg" alt="">
+                                    <p>Daryl Ginn</p>
+                                    <span>United Kingdom</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="players-statistics col-lg-12">
+                            <h5>Player statistics</h5>
+                            <div class="row">
+                                <div class="circle-box col-lg-3 col-md-3">
+                                    <div class="chart " data-percent="75">
+                                        <span class="circle-percent">75%</span>
+                                    </div>
+                                    <span class="skill-name">New Players</span>
+                                </div>
+                                <div class="circle-box p0 col-lg-3 col-md-3">
+                                    <div class="chart " data-percent="80"><span class="circle-percent">24%</span></div>
+                                    <span class="skill-name">Revisited</span>
+                                </div>
+                                <div class="circle-box p0 col-lg-3 col-md-3">
+                                    <div class="chart " data-percent="90"><span class="circle-percent">54%</span></div>
+                                    <span class="skill-name">Commented</span>
+                                </div>
+                                <div class="circle-box p0 col-lg-3 col-md-3">
+                                    <div class="chart " data-percent="95"><span class="circle-percent">65%</span></div>
+                                    <span class="skill-name">Active players</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="assets/js/jquery-3.3.1.min.js"></script>
+    <script src="assets/js/jquery.easypiechart.js"></script>
+    <script>
+        $(function () {
+            $('.chart').easyPieChart({
+                size: 110,
+                barColor: '#8dc564',
+                scaleColor: false,
+                lineWidth: 10,
+                linCap: 'circle'
+            });
+        });
+        var canvas = document.getElementById('myChart');
+        var data = {
+            labels: ["January", "February", "March", "April", "May", "June", "July"],
+            datasets: [{
+                label: "My First dataset",
+                fill: false,
+                lineTension: 0.1,
+                backgroundColor: "rgba(75,192,192,0.4)",
+                borderColor: "rgba(75,192,192,1)",
+                borderCapStyle: 'butt',
+                borderDash: [],
+                borderDashOffset: 0.0,
+                borderJoinStyle: 'miter',
+                pointBorderColor: "rgba(75,192,192,1)",
+                pointBackgroundColor: "#fff",
+                pointBorderWidth: 1,
+                pointHoverRadius: 5,
+                pointHoverBackgroundColor: "rgba(75,192,192,1)",
+                pointHoverBorderColor: "rgba(220,220,220,1)",
+                pointHoverBorderWidth: 2,
+                pointRadius: 5,
+                pointHitRadius: 10,
+                data: [65, 59, 80, 0, 56, 55, 40],
+            }]
+        };
+
+        var option = {
+            showLines: true
+        };
+        var myLineChart = Chart.Line(canvas, {
+            data: data,
+            options: option
+        });
+        var canvas = document.getElementById('mySecondChart');
+        var data = {
+            labels: ["January", "February", "March", "April", "May", "June", "July"],
+            datasets: [{
+                label: "My First dataset",
+                fill: false,
+                lineTension: 0.1,
+                backgroundColor: "rgba(75,192,192,0.4)",
+                borderColor: "rgba(75,192,192,1)",
+                borderCapStyle: 'butt',
+                borderDash: [],
+                borderDashOffset: 0.0,
+                borderJoinStyle: 'miter',
+                pointBorderColor: "rgba(75,192,192,1)",
+                pointBackgroundColor: "#fff",
+                pointBorderWidth: 1,
+                pointHoverRadius: 5,
+                pointHoverBackgroundColor: "rgba(75,192,192,1)",
+                pointHoverBorderColor: "rgba(220,220,220,1)",
+                pointHoverBorderWidth: 2,
+                pointRadius: 5,
+                pointHitRadius: 10,
+                data: [65, 59, 80, 0, 56, 55, 40],
+            }]
+        };
+
+        var option = {
+            showLines: true
+        };
+        var myLineChart = Chart.Line(canvas, {
+            data: data,
+            options: option
+        });
+    </script>
+</body>
+
+</html>
